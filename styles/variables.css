@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-family: Inter, sans-serif;
+    --fantasty-font-family: "Press Start 2P" fantasty;
+    --heart-color: #ff0000;
+}
+
+@media (prefers-color-theme: dark) {
+    :root {
+    --header-background: var(--page-background);
+    --text-color: #00cc14;
+    --mix-blend-color: var(--text-color);
+    --stroke-color: var(--text-color);
+    --label-stroke-color: var(--page-background);
+}
+}
