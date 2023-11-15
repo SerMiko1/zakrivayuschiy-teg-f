@@ -38,7 +38,7 @@
 }
 
 .header {
-  font-family: var(--fantasy-font-family);
+  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
   text-align: center;
   margin: 100px 0;
   padding: 136px 0 23px;
@@ -68,7 +68,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: -moz-min-content;
   width: min-content;
   text-align: start;
   margin: 0 45.1%;
@@ -141,7 +140,7 @@
 }
 
 .button {
-  font-family: var(--fantasy-font-family);
+  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -309,7 +308,7 @@
 }
 
 .image-label {
-  font-family: var(--fantasy-font-family);
+  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
   font-size: 14px;
   font-variation-settings: var(--text-font-weight);
   z-index: 1;
@@ -412,7 +411,7 @@
 }
 
 .dialog {
-  font-family: var(--fantasy-font-family);
+  font-family: var(--fantasy-font-family),'Arial', sans-serif;
   font-size: 14px;
   padding: 30px 26px;
   color: var(--text-color);
