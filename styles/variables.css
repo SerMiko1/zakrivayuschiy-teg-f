@@ -1,38 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font-family: Inter, sans-serif;
-    --fantasty-font-family: "Press Start 2P" fantasty;
+    --main-font-family: 'Inter', sans-serif;
+    --fantasy-font-family: 'Press Start 2P', fantasy;
     --heart-color: #ff0000;
-}
+  }
 
-@media (prefers-color-theme: dark) {
+  @media (prefers-color-scheme: dark) {
     :root {
-    --header-background: var(--page-background);
-    --text-color: #00cc14;
-    --mix-blend-color: var(--text-color);
-    --stroke-color: var(--text-color);
-    --label-stroke-color: var(--page-background);
-    --page-background: #000;
-    --background-color: var(--page-background);
-    --background-color-start: #007f0c;
-    --background-color-end: #004306;
-    --title-font-weight: "wght" 785;
-    --text-font-weight: "wght" 465;
-}
-}
-
-@media (prefers-color-theme: light) {
-    :root {
-        --header-background: var(--page-background);
-        --text-color: #0000;
-        --mix-blend-color: var(--text-color);
-        --stroke-color: var(--text-color);
-        --label-stroke-color: var(--page-background);
-        --page-background: #fff;
-        --background-color: #d3d3d3;
-        --background-color-start: #e7e7e7;
-        --background-color-end: #1a1a1a;
-        --title-font-weight: "wght" 700;
-        --text-font-weight: "wght" 400;
+      --pg-background: #000;
+      --bg-color: var(--pg-background);
+      --bg-color-start: #007f0c;
+      --bg-color-end: #004306;
+      --title-font-weight: "wght" 785;
+      --text-font-weight: "wght" 465;
+      --header-background: var(--pg-background);
+      --text-color: #00cc14;
+      --mix-blend-color: var(--text-color);
+      --stroke-color: var(--text-color);
+      --label-stroke-color: var(--pg-background);
     }
-}
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --pg-background: #fff;
+      --bg-color: #d3d3d3;
+      --bg-color-start: #e7e7e7;
+      --bg-color-end: #1a1a1a;
+      --title-font-weight: "wght" 700;
+      --text-font-weight: "wght" 400;
+      --header-background: var(--pg-background);
+      --text-color: #000;
+      --mix-blend-color: var(--pg-background);
+      --stroke-color: var(--text-color);
+      --label-stroke-color: var(--pg-background);
+    }
+  }
+  
