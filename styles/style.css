@@ -11,7 +11,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
-  min-inline-size: 320px;
+  min-width: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
   background: repeating-linear-gradient(
@@ -58,10 +58,9 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 300px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
   .header__link {
-    font-size: 2.5rem; /* Новый размер шрифта для ширины экрана до 300 пикселей */
-    /* Другие стили, которые вы хотите применить при ширине экрана до 300 пикселей */
+    font-size: 2.5rem;
   }
 }
 
