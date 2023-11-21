@@ -11,7 +11,8 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
-  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem); /* спасибо вам большое за ревью и отзывчивость, элементарные ошибки не могу исправить, голова кипит от кода)))*/
+  min-inline-size: 375px;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem); /* спасибо вам большое за ревью и отзывчивость, элементарные ошибки не могу исправить, голова кипит от кода))) Хорошего вам вечера и прекрасного настроения*/
   color: var(--text-color);
   background: repeating-linear-gradient(
       90deg,
