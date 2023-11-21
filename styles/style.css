@@ -11,7 +11,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
-  min-width: 320px;
+  min-width: 375px;
   min-block-size: 100dvb;
   color: var(--text-color);
   background: repeating-linear-gradient(
@@ -39,7 +39,7 @@
 }
 
 .header {
-  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
+  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
   text-align: center;
   margin: 100px 0;
   padding: 136px 0 23px;
@@ -47,21 +47,9 @@
   border: 2px solid var(--stroke-color);
 }
 
-@media (width <= 375px) {
-  .header {
-    padding: 120px 0 24px;
-  }
-}
-
 .header__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
-}
-
-@media (min-width: 320px) and (max-width: 375px) {
-  .header__link {
-    font-size: 2.5rem;
-  }
 }
 
 .header__title {
@@ -78,12 +66,6 @@
   width: min-content;
   text-align: start;
   margin: 0 45.1%;
-}
-
-@media (width <= 375px) {
-  .theme-menu__list {
-    margin: 0 41.1%;
-  }
 }
 
 .theme-menu__item {
@@ -149,7 +131,7 @@
 }
 
 .button {
-  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
+  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -171,7 +153,7 @@
   overflow: hidden;
   background: var(--text-color);
   transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::before {
@@ -198,12 +180,6 @@
   gap: 8px;
   align-items: center;
   background: var(--pg-background);
-}
-
-@media (width <= 375px) {
-  .save-button {
-    flex-direction: column;
-  }
 }
 
 .ok-button {
@@ -259,6 +235,7 @@
   height: 36px;
   background: transparent;
   border: none;
+  transition: border 0.3s ease;
   cursor: pointer;
 }
 
@@ -280,12 +257,6 @@
   align-items: center;
   justify-content: end;
   gap: 6px;
-}
-
-@media (width <= 375px) {
-  .card:nth-child(7) .card__text {
-    max-width: 317px;
-  }
 }
 
 .grayscale {
@@ -317,7 +288,7 @@
 }
 
 .image-label {
-  font-family: var(--fantasy-font-family), 'Arial', sans-serif;
+  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
   font-size: 14px;
   font-variation-settings: var(--text-font-weight);
   z-index: 1;
@@ -329,37 +300,14 @@
   top: 27px;
 }
 
-@supports (text-stroke: 1px var(--label-stroke-color)) or
-  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
-  .image-label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--label-stroke-color);
-    text-stroke: 1px var(--label-stroke-color);
-  }
-}
-
-@media (width <= 375px) {
-  .image-label {
-    right: 10px;
-    top: 24px;
-  }
-}
-
 .floppy-image {
   width: 21px;
   height: 21px;
   mix-blend-mode: difference;
 }
 
-@media (width <= 375px) {
-  .floppy-image {
-    width: 28px;
-    height: 28px;
-  }
-}
-
 .dialog {
-  font-family: var(--fantasy-font-family),'Arial', sans-serif;
+  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
   font-size: 14px;
   padding: 30px 26px;
   color: var(--text-color);
@@ -383,12 +331,6 @@
   gap: 26px;
 }
 
-@media (width <= 375px) {
-  .dialog__container {
-    gap: 28px;
-  }
-}
-
 .dialog__text {
   text-transform: uppercase;
   line-height: 1.5;
@@ -402,12 +344,6 @@
   align-items: center;
 }
 
-@media (width <= 375px) {
-  .dialog__text {
-    width: 80%;
-  }
-}
-
 .dialog .floppy-image {
   width: 39px;
   height: 39px;
@@ -415,7 +351,42 @@
 }
 
 @media (width <= 375px) {
+  .header {
+    padding: 120px 0 24px;
+  }
+  .theme-menu__list {
+    margin: 0 41.1%;
+  }
+  .save-button {
+    flex-direction: column;
+  }
+  .card:nth-child(7) .card__text {
+    max-width: 317px;
+  }
+  .image-label {
+    right: 10px;
+    top: 24px;
+  }
+  .floppy-image {
+    width: 28px;
+    height: 28px;
+  }
+  .dialog__container {
+    gap: 28px;
+  }
+  .dialog__text {
+    width: 80%;
+  }
   .dialog {
     padding: 32px 38px;
+  }
+}
+
+@supports (text-stroke: 1px var(--label-stroke-color)) or
+  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
+  .image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
   }
 }

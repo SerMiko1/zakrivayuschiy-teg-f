@@ -10,7 +10,9 @@
 
 body {
   font-family: var(--main-font-family), sans-serif;
-  max-width: clamp(300px, 100%, 700px);
+  min-inline-size: 375px;
+  max-inline-size: 1440;
+  max-width: 700px;
   margin: 0 auto;
 }
 
