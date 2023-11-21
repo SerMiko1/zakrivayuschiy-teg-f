@@ -11,8 +11,7 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
-  min-inline-size: 375px;
-  max-inline-size: 700px;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem); /* спасибо вам большое за ревью и отзывчивость, элементарные ошибки не могу исправить, голова кипит от кода)))*/
   color: var(--text-color);
   background: repeating-linear-gradient(
       90deg,
@@ -39,7 +38,7 @@
 }
 
 .header {
-  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
+  font-family: var(--fantasy-font-family), fantasy;
   text-align: center;
   margin: 100px 0;
   padding: 136px 0 23px;
@@ -131,7 +130,7 @@
 }
 
 .button {
-  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
+  font-family: var(--fantasy-font-family), fantasy;
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -288,7 +287,7 @@
 }
 
 .image-label {
-  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
+  font-family: var(--fantasy-font-family), fantasy;
   font-size: 14px;
   font-variation-settings: var(--text-font-weight);
   z-index: 1;
@@ -307,9 +306,9 @@
 }
 
 .dialog {
-  font-family: var(--fantasy-font-family), 'Inter', sans-serif;
+  font-family: var(--fantasy-font-family), fantasy;
   font-size: 14px;
-  padding: 30px 26px;
+  padding: 30px;
   color: var(--text-color);
   background: var(--pg-background);
   border: 2px solid var(--stroke-color);
@@ -341,6 +340,7 @@
 .dialog__text-container {
   display: flex;
   gap: 22px;
+  padding-bottom: 30px;
   align-items: center;
 }
 
@@ -378,7 +378,7 @@
     width: 80%;
   }
   .dialog {
-    padding: 32px 38px;
+    padding: 30px 40px;
   }
 }
 
