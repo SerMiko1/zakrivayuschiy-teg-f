@@ -11,8 +11,8 @@
 
 .page {
   font-variation-settings: var(--text-font-weight);
-  min-width: 375px;
-  min-block-size: 100dvb;
+  min-inline-size: 375px;
+  max-inline-size: 700px;
   color: var(--text-color);
   background: repeating-linear-gradient(
       90deg,
